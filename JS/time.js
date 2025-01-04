@@ -1,5 +1,5 @@
 function updateDateTime() {
-            const dateTimeElement = document.getElementById('dateTime');
+            const dateTimeElement = document.getElementById('datetime');
             const now = new Date();
             dateTimeElement.textContent = now.toLocaleString(); // Update the element with the current date and time
         }
