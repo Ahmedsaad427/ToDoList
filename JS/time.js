@@ -1,13 +1,11 @@
-let dt = new Date();
-
-        // Function to update the date and time
-        function updateDateTime() {
-            dt.setSeconds(dt.getSeconds() + 1); // Increment by 1 second
-            document.getElementById("datetime").innerHTML = dt.toLocaleString(); // Display updated time
+function updateDateTime() {
+            const dateTimeElement = document.getElementById('dateTime');
+            const now = new Date();
+            dateTimeElement.textContent = now.toLocaleString(); // Update the element with the current date and time
         }
 
-        // Start updating the time every second
+        // Update the date and time every second
         setInterval(updateDateTime, 1000);
 
-        // Display the initial date and time
+        // Display the initial date and time immediately
         updateDateTime();
